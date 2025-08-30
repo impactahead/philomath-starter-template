@@ -1,0 +1,36 @@
+name: Generate PDF
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TOKEN }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Install philomath gem
+        run: gem install philomath
+
+      - name: Generate PDF inline
+        run: |
+          ruby -e "require 'philomath'; Philomath.render_from_config(output_path: 'book.pdf')"
+
+
+      - name: Commit generated PDF
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add book.pdf
+          git commit -m "Add generated PDF [skip ci]" || echo "No changes to commit"
+          git push

@@ -1,0 +1,8 @@
+name: Book title
+author: Your name
+cover_image: cover.png
+chapters:
+  - :name: Chapter 1
+    :file_path: content/chapter-1/chapter.md
+  - :name: Chapter 2
+    :file_path: content/chapter-2/chapter.md
