@@ -10,7 +10,10 @@ To start writing, you will need the following:
 
 * Some free time
 * An idea about the first sentence
+* Github token with minimal permissions to write the content of the repository
 * Philomath starter template!
+
+Now, just fork the repository and start writing your own content. Each push to `main` will produce the new version of the book.
 
 ## Syntax highlighting
 
@@ -32,12 +35,9 @@ end
 Not only Ruby!
 
 ```javascript
-import { Component } from 'react';
-
-class Greeting extends Component {
-  render() {
-    return <h1>Hello, {this.props.name}!</h1>;
-  }
+function myCalculator(num1, num2) {
+  let sum = num1 + num2;
+  return sum;
 }
 ```
 
