@@ -1,6 +1,6 @@
 # Philomath Starter Template
 
-Fork this repository to start creating your own book. The rules are simple:
+Clone this repository to start creating your own book. The rules are simple:
 
 1. Write chapters in markdown
 2. Each time you add or remove chapter, update `book.yml` configuration file

@@ -13,7 +13,7 @@ To start writing, you will need the following:
 * Github token with minimal permissions to write the content of the repository
 * Philomath starter template!
 
-Now, just fork the repository and start writing your own content. Each push to `main` will produce the new version of the book.
+Now, just clone the repository and start writing your own content. Each push to `main` will produce the new version of the book.
 
 ## Syntax highlighting
 
