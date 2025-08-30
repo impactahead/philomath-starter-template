@@ -34,11 +34,12 @@ end
 
 Not only Ruby!
 
-```javascript
-function myCalculator(num1, num2) {
-  let sum = num1 + num2;
-  return sum;
-}
+```python
+def greet(name):
+    print(f"Hello, {name}!")
+
+if __name__ == "__main__":
+    greet("World")
 ```
 
 Now it's your turn!
